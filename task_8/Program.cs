@@ -2,16 +2,15 @@
 Console.WriteLine("Введите число для задачи 8:");
 string firstNumber = Console.ReadLine();
 int task8FirstNumber = Convert.ToInt32(firstNumber);
-int lineOfNumbers = 0;
+int lineOfNumbers = 2;
 if (task8FirstNumber >= 2)
 {
     Console.WriteLine("Ответ на 8 задачу: ");
-    while (lineOfNumbers <= (task8FirstNumber - 4))
+    while (lineOfNumbers <= (task8FirstNumber-2))
     {
-        lineOfNumbers += 2;
         Console.Write($"{lineOfNumbers}, ");
+        lineOfNumbers += 2;
     }
-    lineOfNumbers += 2;
     Console.Write(lineOfNumbers);
 }
 else
